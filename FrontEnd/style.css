@@ -1,0 +1,324 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#43444400;
+}
+
+/* Navigation */
+
+nav{
+    background:#D6336C;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+nav h2{
+    color:white;
+    font-size:28px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("study.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    width:70%;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:30px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#D6336C;
+    color:white;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:5px;
+    margin:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#D6336C
+;
+}
+
+/* Sections */
+
+section{
+    padding:60px;
+}
+
+.title{
+    text-align:center;
+    color:#D6336C
+;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* Features */
+
+.features{
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.feature-box{
+    display: flex;
+    justify-content: center;   /* Centers the cards */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+.card{
+    width: 250px;
+    background: #D6336C
+;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.card{
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.card:hover{
+    border-color: #000;
+}
+
+/* About */
+
+.about{
+    background:white;
+}
+
+.about p{
+    font-size:18px;
+    line-height:30px;
+    text-align:justify;
+}
+
+/* Modules */
+
+.modules{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.module{
+    width:350px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+}
+
+.module h3{
+    color:#D6336C
+;
+    margin-bottom:20px;
+}
+
+.module ul{
+    padding-left:20px;
+}
+
+.module li{
+    margin-bottom:12px;
+}
+
+/* Footer */
+
+footer{
+    background:#D6336C
+;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.hero-content{
+    width:90%;
+}
+
+}
+
+
+/* LOGIN PAGE */
+
+.login-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#f5f5f5,#dcdcdc);
+}
+
+.login-box{
+    width:380px;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.login-box h1{
+    color:#111;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.input-box{
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.input-box label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:8px;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.input-box input:focus{
+    border-color:#000;
+    box-shadow:0 0 8px rgba(0,0,0,0.2);
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#000;
+}
+
+.login-btn{
+    width:100%;
+    padding:12px;
+    background:#111;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:#333;
+}
+
+.register-link{
+    margin-top:20px;
+    font-size:15px;
+}
+
+.register-link a{
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
